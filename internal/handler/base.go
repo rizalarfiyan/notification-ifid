@@ -20,7 +20,7 @@ func NewBaseHandler() BaseHandler {
 func (h *baseHandler) Home(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
 		"status":  http.StatusOK,
-		"message": "Hello World",
+		"message": "Success get information!",
 		"data": gin.H{
 			"name":     "Muhamad Rizal Arfiyan",
 			"username": "rizalarfiyan",
@@ -30,6 +30,7 @@ func (h *baseHandler) Home(c *gin.Context) {
 		},
 	})
 }
+
 func (h *baseHandler) PingPong(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
 		"status":  http.StatusOK,
